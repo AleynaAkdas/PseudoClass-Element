@@ -147,7 +147,7 @@ ul li {
   font-style: italic;
 }
 
-.nth-list li:nth-child(2):nth-child(3) {
+.nth-list li:nth-child(2) {
   background-color: #f3e5f5;
   color: #6a1b9a;
 }
