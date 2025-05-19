@@ -1,0 +1,26 @@
+1. :hover
+Bir öğenin üzerine gelindiğinde stil değişikliği yapmamızı sağlar. Genellikle buton, link gibi öğelerde kullanılır.
+
+2. :focus
+Bir input alanına tıklanıldığında ya da klavye ile odaklanıldığında çalışır. Form elemanlarında kullanılır.
+
+3. :active
+Bir öğeye tıklanma anında uygulanır. Buton basılıyken farklı görünmesini sağlar.
+
+4. :checked
+Checkbox veya radio button seçildiğinde devreye girer. JavaScript kullanmadan öğe görünürlüğü gibi işlemler yapılabilir.
+
+5. :first-child / :last-child
+Bir kapsayıcının ilk veya son elemanına özel stil vermek için kullanılır.
+
+6. :nth-child(n)
+Kapsayıcı içindeki belirli sıra numarasına sahip öğeleri seçmek için kullanılır. Örneğin her 2. öğe farklı renkte olabilir.
+
+7. :not(selector)
+Seçici hariç diğer tüm öğeleri hedef alır. Belirli bir class dışında kalan öğeleri stilize etmek için kullanılır.
+
+8. ::before / ::after
+Bir öğeye sanal içerik eklemek için kullanılır. HTML’e dokunmadan metnin başına veya sonuna ikon gibi içerikler ekleyebiliriz.
+
+9. ::first-letter
+Bir paragrafın ilk harfini vurgulamak için kullanılır. Görsel olarak dikkat çekici başlangıçlar için tercih edilir.

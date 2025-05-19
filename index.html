@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pseudo Class & Element Örnekleri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Pseudo Class & Element Örnekleri</h1>
+
+  <!-- 1. :hover -->
+  <div class="card">
+    <h2>:hover</h2>
+    <button class="hover-btn">Üzerime Gel </button>
+    <p>Butonun üzerine gelince arka plan rengi değişir.</p>
+    <!-- Hover, kullanıcı etkileşimi -->
+  </div>
+
+  <!-- 2. :focus -->
+  <div class="card">
+    <h2>:focus</h2>
+    <input type="text" class="focus-input" placeholder="Buraya tıkla...">
+    <p>Input kutusuna tıklanınca kenarlığı renklendirilir.</p>
+    <!-- Form alanlarına odaklandığımızda geri bildirim vermek için kullanılır. -->
+  </div>
+
+  <!-- 3. :active -->
+  <div class="card">
+    <h2>:active</h2>
+    <button class="active-btn">Bana Tıkla 👆</button>
+    <p>Butona tıklanma anında rengi değişir.</p>
+    <!-- Tıklanma anında farklı stil vererek "buton hissini" artırırız. -->
+  </div>
+
+  <!-- 4. :checked -->
+  <div class="card">
+    <h2>:checked Kullanımı</h2>
+  
+    <label for="kontrol" class="etiket">Mesajı Göster</label>
+    <input type="checkbox" id="kontrol" hidden>
+  
+    <p class="mesaj">🎉 Bu mesaj sadece checkbox işaretlenince görünür olur.</p>
+  </div>
+  
+  <!-- 5. :first-child / :last-child -->
+  <div class="card">
+    <h2>:first-child / :last-child</h2>
+    <ul class="child-list">
+      <li>1. Öğe</li>
+      <li>2. Öğe</li>
+      <li>3. Öğe</li>
+    </ul>
+    <p>Listenin ilk ve son öğesi farklı renkte görünür.</p>
+  </div>
+
+  <!-- 6. :nth-child(n) -->
+  <div class="card">
+    <h2>:nth-child(n)</h2>
+    <ul class="nth-list">
+      <li>Öğe 1</li>
+      <li>Öğe 2</li>
+      <li>Öğe 3</li>
+      <li>Öğe 4</li>
+      <li>Öğe 5</li>
+    </ul>
+    <p>Her 2. öğe farklı renkte gösterilir.</p>
+    <!-- Özellikle tablo, liste veya kart yapılarında düzen sağlamak için kullanılır. -->
+  </div>
+
+  <!-- 7. :not() -->
+  <div class="card">
+    <h2>:not()</h2>
+    <ul class="not-list">
+      <li>Genel</li>
+      <li class="ozel">Özel</li>
+      <li>Genel</li>
+    </ul>
+    <p>"Özel" sınıfı dışındaki öğeler renklendirilir.</p>
+    <!-- Hariç tutmak istediğimiz öğeleri seçmek için kullanırız. -->
+  </div>
+
+  <!-- 8. ::before / ::after -->
+  <div class="card">
+    <h2>::before / ::after</h2>
+    <p class="before-after">Bu cümle başında ve sonunda semboller var.</p>
+    <!-- Bu pseudo element'ler ile HTML'e dokunmadan içerik ekleyebiliriz. -->
+  </div>
+
+  <!-- 9. ::first-letter -->
+  <div class="card">
+    <h2>::first-letter</h2>
+    <p class="first-letter">Karanlıkta yankılanan bir sessizlik vardı...</p>
+    <!-- Paragrafların ilk harfini belirginleştirerek etkileyici bir giriş yaratabiliriz. -->
+  </div>
+
+</body>
+
+</html>
